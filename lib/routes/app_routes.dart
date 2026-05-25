@@ -11,12 +11,16 @@ class AppRoutes {
     '/home' : (BuildContext context) => const HomeScreen(),
     '/listview' : (BuildContext context) => const ListviewScreen(),
     '/alert' : (BuildContext context) => const AlertScreen(),
+    '/avatar' : (BuildContext context) => const AvatarScreen(),
+    '/card' : (BuildContext context) => const CardScreen(),
 
   };
 
   static final menuOptions = <MenuOptions>[
     MenuOptions(route: '/listview', name: 'Pantalla de ListView', icon: Icons.list_outlined, screen: const ListviewScreen()),
     MenuOptions(route: '/alert', name: 'Pantalla de Alertas', icon: Icons.warning_rounded, screen: const AlertScreen()),
+    MenuOptions(route: '/avatar', name: 'Pantalla de Avatar', icon: Icons.person_2_rounded, screen: const AvatarScreen()),
+    MenuOptions(route: '/card', name: 'Pantalla de Cards', icon: Icons.card_membership_rounded, screen: const CardScreen()),
   ];
 
 }

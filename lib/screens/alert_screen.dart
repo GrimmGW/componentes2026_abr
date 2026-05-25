@@ -4,11 +4,12 @@ class AlertScreen extends StatelessWidget {
 
   void displayDialog(BuildContext context){
     showDialog(
+      barrierDismissible: false,
       context: context, 
       builder: (context){
         return AlertDialog(
-          title: Text('Soy una alerta'),
-          content: Column(
+          title: const Text('Soy una alerta'),
+          content: const Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               Text('Sunt aliqua magna voluptate proident exercitation dolore ut veniam.')
@@ -17,7 +18,7 @@ class AlertScreen extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context), 
-              child: Text('Aceptar')
+              child: const Text('Aceptar')
             )
           ],
         );
@@ -25,21 +26,21 @@ class AlertScreen extends StatelessWidget {
     );
   }
    
-  const AlertScreen({Key? key}) : super(key: key);
+  const AlertScreen({super.key});
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.pinkAccent,
-        title: Text('Alertas'),
+        title: const Text('Alertas'),
       ),
       body: Center(
         child: FilledButton(
           onPressed: (){
             displayDialog(context);
           }, 
-          child: Text('Ver Alerta')
+          child: const Text('Ver Alerta')
         ),
       )
     );

@@ -1,0 +1,1 @@
+export 'package:componentes2026_abr/widgets/custom_card1_widget.dart';
