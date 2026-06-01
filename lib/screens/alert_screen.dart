@@ -32,7 +32,6 @@ class AlertScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pinkAccent,
         title: const Text('Alertas'),
       ),
       body: Center(

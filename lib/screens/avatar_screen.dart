@@ -18,7 +18,6 @@ class AvatarScreen extends StatelessWidget {
             ),
           )
         ],
-        backgroundColor: Colors.pinkAccent,
       ),
       body: const Center(
          child: Column(

@@ -38,7 +38,6 @@ class _ContainerScreenState extends State<ContainerScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Container'),
-        backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
          child: AnimatedContainer(
@@ -56,7 +55,6 @@ class _ContainerScreenState extends State<ContainerScreen> {
         onPressed: (){
           cambiarForma();
         },
-        backgroundColor: Colors.pink[200],
         child: const Icon(Icons.play_arrow_rounded, color: Colors.black,),
       ),
     );

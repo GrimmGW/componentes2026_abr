@@ -14,6 +14,7 @@ class AppRoutes {
     '/avatar' : (BuildContext context) => const AvatarScreen(),
     '/card' : (BuildContext context) => const CardScreen(),
     '/container' : (BuildContext context) => const ContainerScreen(),
+    '/slider' : (BuildContext context) => const SliderScreen(),
 
   };
 
@@ -22,7 +23,8 @@ class AppRoutes {
     MenuOptions(route: '/alert', name: 'Pantalla de Alertas', icon: Icons.warning_rounded, screen: const AlertScreen()),
     MenuOptions(route: '/avatar', name: 'Pantalla de Avatar', icon: Icons.person_2_rounded, screen: const AvatarScreen()),
     MenuOptions(route: '/card', name: 'Pantalla de Cards', icon: Icons.card_membership_rounded, screen: const CardScreen()),
-    MenuOptions(route: '/container', name: 'Pantalla de Container', icon: Icons.check_box_outline_blank_rounded, screen: const ContainerScreen())
+    MenuOptions(route: '/container', name: 'Pantalla de Container', icon: Icons.check_box_outline_blank_rounded, screen: const ContainerScreen()),
+    MenuOptions(route: '/slider', name: 'Pantalla de Sliders', icon: Icons.slideshow_rounded, screen: const SliderScreen()),
   ];
 
 }
