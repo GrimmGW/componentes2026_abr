@@ -21,7 +21,7 @@ class _SliderScreenState extends State<SliderScreen> {
       ),
       body: Column(
         children: [
-          Slider(
+          Slider.adaptive(
             min: 0,
             max: 100,
             value: _sliderValue, 
@@ -32,7 +32,7 @@ class _SliderScreenState extends State<SliderScreen> {
               });
             } : null
           ),
-          SwitchListTile(
+          SwitchListTile.adaptive(
             title: const Text('Terminos y condiciones', style: TextStyle(fontWeight: FontWeight.bold),),
             subtitle: const Text('Al tocar esta casilla, estaras aceptando los terminos y condiciones de la app.'),
             value: _isActive, 

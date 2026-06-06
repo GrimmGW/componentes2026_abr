@@ -1,5 +1,6 @@
 import 'package:componentes2026_abr/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
    
@@ -20,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             title: Text(AppRoutes.menuOptions[index].name),
-            leading: Icon(AppRoutes.menuOptions[index].icon),
+            leading: FaIcon(AppRoutes.menuOptions[index].icon),
             onTap: () => Navigator.pushNamed(context, AppRoutes.menuOptions[index].route),
           );
         },

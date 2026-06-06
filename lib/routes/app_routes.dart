@@ -1,6 +1,7 @@
 import 'package:componentes2026_abr/models/menu_options.dart';
 import 'package:componentes2026_abr/screens/screens.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class AppRoutes {
 
@@ -15,16 +16,19 @@ class AppRoutes {
     '/card' : (BuildContext context) => const CardScreen(),
     '/container' : (BuildContext context) => const ContainerScreen(),
     '/slider' : (BuildContext context) => const SliderScreen(),
+    '/dep' : (BuildContext context) => const DependenciesScreen(),
+    '/inputs' : (BuildContext context) => const InputsScreen(),
 
   };
 
   static final menuOptions = <MenuOptions>[
-    MenuOptions(route: '/listview', name: 'Pantalla de ListView', icon: Icons.list_outlined, screen: const ListviewScreen()),
-    MenuOptions(route: '/alert', name: 'Pantalla de Alertas', icon: Icons.warning_rounded, screen: const AlertScreen()),
-    MenuOptions(route: '/avatar', name: 'Pantalla de Avatar', icon: Icons.person_2_rounded, screen: const AvatarScreen()),
-    MenuOptions(route: '/card', name: 'Pantalla de Cards', icon: Icons.card_membership_rounded, screen: const CardScreen()),
-    MenuOptions(route: '/container', name: 'Pantalla de Container', icon: Icons.check_box_outline_blank_rounded, screen: const ContainerScreen()),
-    MenuOptions(route: '/slider', name: 'Pantalla de Sliders', icon: Icons.slideshow_rounded, screen: const SliderScreen()),
+    MenuOptions(route: '/listview', name: 'Pantalla de ListView', icon: FontAwesomeIcons.solidRectangleList, screen: const ListviewScreen()),
+    MenuOptions(route: '/alert', name: 'Pantalla de Alertas', icon: FontAwesomeIcons.triangleExclamation, screen: const AlertScreen()),
+    MenuOptions(route: '/avatar', name: 'Pantalla de Avatar', icon: FontAwesomeIcons.solidCircleUser, screen: const AvatarScreen()),
+    MenuOptions(route: '/card', name: 'Pantalla de Cards', icon: FontAwesomeIcons.solidAddressCard, screen: const CardScreen()),
+    MenuOptions(route: '/container', name: 'Pantalla de Container', icon: FontAwesomeIcons.box, screen: const ContainerScreen()),
+    MenuOptions(route: '/dep', name: 'Pantalla de Dependencias', icon: FontAwesomeIcons.boxOpen, screen: const DependenciesScreen()),
+    MenuOptions(route: '/inputs', name: 'Pantalla de Inputs/Entradas', icon: FontAwesomeIcons.solidKeyboard, screen: const DependenciesScreen()),
   ];
 
 }

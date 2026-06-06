@@ -1,3 +1,5 @@
+export 'package:componentes2026_abr/screens/inputs_screen.dart';
+export 'package:componentes2026_abr/screens/dependencies_screen.dart';
 export 'package:componentes2026_abr/screens/alert_screen.dart';
 export 'package:componentes2026_abr/screens/avatar_screen.dart';
 export 'package:componentes2026_abr/screens/card_screen.dart';
