@@ -18,6 +18,7 @@ class AppRoutes {
     '/slider' : (BuildContext context) => const SliderScreen(),
     '/dep' : (BuildContext context) => const DependenciesScreen(),
     '/inputs' : (BuildContext context) => const InputsScreen(),
+    '/infinite' : (BuildContext context) => const InfiniteScrollScreen(),
 
   };
 
@@ -29,6 +30,7 @@ class AppRoutes {
     MenuOptions(route: '/container', name: 'Pantalla de Container', icon: FontAwesomeIcons.box, screen: const ContainerScreen()),
     MenuOptions(route: '/dep', name: 'Pantalla de Dependencias', icon: FontAwesomeIcons.boxOpen, screen: const DependenciesScreen()),
     MenuOptions(route: '/inputs', name: 'Pantalla de Inputs/Entradas', icon: FontAwesomeIcons.solidKeyboard, screen: const DependenciesScreen()),
+    MenuOptions(route: '/infinite', name: 'Pantalla de Scroll infinito', icon: FontAwesomeIcons.scroll, screen: const InfiniteScrollScreen()),
   ];
 
 }
